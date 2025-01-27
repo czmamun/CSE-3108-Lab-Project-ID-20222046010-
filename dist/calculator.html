@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-slate-800 text-white m-5">
+    <header>
+        <nav
+            class="bg-gradient-to-r from-indigo-500 to-indigo-800 flex justify-between items-center border border-indigo-900 rounded-md px-4">
+            <div class="flex space-x-5 items-center">
+                <div class="text-white text-center font-bold cursor-pointer">
+                    <p class="text-xl">CGPA</p>
+                    <p class="text-sm">Calculator</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-indigo-300">Home</a>
+                    <a href="#" class="text-white hover:text-indigo-300">Calculators</a>
+                    <a href="#" class="text-white hover:text-indigo-300">Guide</a>
+                    <a href="#" class="text-white hover:text-indigo-300">About</a>
+                    <a href="#" class="text-white hover:text-indigo-300">More</a>
+                    <a href="#" class="text-white hover:text-indigo-300">Blog</a>
+                    <a href="#" class="text-white hover:text-indigo-300">Contact</a>
+                </div>
+            </div>
+            <div>
+                <button
+                    class="m-2 px-4 py-2 bg-indigo-700 hover:bg-indigo-600 border rounded-md text-white">Login</button>
+                <button class="m-2 px-4 py-2 bg-indigo-700 hover:bg-indigo-600 border rounded-md text-white">Sign
+                    Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <p class="flex justify-center text-lg font-bold">Enter your Course title and Marks..</p>
+        </section>
+        <section>
+            <form action="result.php" method="post">
+
+                <table
+                    class="shadow-lg w-full text-white bg-slate-700 rounded-md overflow-hidden border border-slate-500 border-collapse">
+                    <thead>
+                        <tr class="bg-indigo-900 text-white text-center border border-slate-500">
+                            <th class="px-4 py-1 border border-slate-500">Course Title</th>
+                            <th class="px-4 py-1 border border-slate-500">Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-left border border-slate-500 hover:bg-indigo-800">
+                            <th class="px-4 py-1 border border-slate-500">
+                                <input type="text" name="sub1" id="sub1" placeholder=".." required
+                                    class="w-full m-0 py-1 px-4 text-white bg-slate-700 border-none">
+                            </th>
+                            <td class="px-4 py-1 border border-slate-500 text-center">
+                                <input type="number" name="sub1mark" id="sub1mark" placeholder=".." required
+                                    class="w-full m-0 py-1 px-1  text-white bg-slate-700 border-none">
+                            </td>
+                        </tr>
+                        <tr class="text-left border border-slate-500 hover:bg-indigo-800">
+                            <th class="px-4 py-1 border border-slate-500">
+                                <input type="text" name="sub2" id="sub2" placeholder=".." required
+                                    class="w-full m-0 py-1 px-4 text-white bg-slate-700 border-none">
+                            </th>
+                            <td class="px-4 py-1 border border-slate-500 text-center">
+                                <input type="number" name="sub2mark" id="sub2mark" placeholder=".." required
+                                    class="w-full m-0 py-1 px-1  text-white bg-slate-700 border-none">
+                            </td>
+                        </tr>
+                        <tr class="text-left border border-slate-500 hover:bg-indigo-800">
+                            <th class="px-4 py-1 border border-slate-500">
+                                <input type="text" name="sub3" id="sub3" placeholder=".." required
+                                    class="w-full m-0 py-1 px-4 text-white bg-slate-700 border-none">
+                            </th>
+                            <td class="px-4 py-1 border border-slate-500 text-center">
+                                <input type="number" name="sub3mark" id="sub3mark" placeholder=".." required
+                                    class="w-full m-0 py-1 px-1  text-white bg-slate-700 border-none">
+                            </td>
+                        </tr>
+                        <tr class="text-left border border-slate-500 hover:bg-indigo-800">
+                            <th class="px-4 py-1 border border-slate-500">
+                                <input type="text" name="sub4" id="sub4" placeholder=".." required
+                                    class="w-full m-0 py-1 px-4 text-white bg-slate-700 border-none">
+                            </th>
+                            <td class="px-4 py-1 border border-slate-500 text-center">
+                                <input type="number" name="sub4mark" id="sub4mark" placeholder=".." required
+                                    class="w-full m-0 py-1 px-1  text-white bg-slate-700 border-none">
+                            </td>
+                        </tr>
+                        <tr class="text-left border border-slate-500 hover:bg-indigo-800">
+                            <th class="px-4 py-1 border border-slate-500">
+                                <input type="text" name="sub5" id="sub5" placeholder=".." required
+                                    class="w-full m-0 py-1 px-4 text-white bg-slate-700 border-none">
+                            </th>
+                            <td class="px-4 py-1 border border-slate-500 text-center">
+                                <input type="number" name="sub5mark" id="sub5mark" placeholder=".." required
+                                    class="w-full m-0 py-1 px-1  text-white bg-slate-700 border-none">
+                            </td>
+                        </tr>
+                        <tr class="text-left border border-slate-500 hover:bg-indigo-800">
+                            <th class="px-4 py-1 border border-slate-500">
+                                <input type="text" name="sub6" id="sub6" placeholder=".." required
+                                    class="w-full m-0 py-1 px-4 text-white bg-slate-700 border-none">
+                            <td class="px-4 py-1 border border-slate-500 text-center">
+                                <input type="number" name="sub6mark" id="sub6mark" placeholder=".." required
+                                    class="w-full m-0 py-1 px-1  text-white bg-slate-700 border-none">
+                            </td>
+                        </tr>
+                        <tr class="text-center border border-slate-500 hover:bg-indigo-800">
+                            <td>
+                                <input type="submit" value="Submit"
+                                    class="text-center bg-indigo-700 m-1 p-1 border border-white hover:bg-white hover:text-indigo-700 hover:border-indigo-700 hover:font-bold">
+                            </td>
+                            <td>
+                                <input type="reset" value="Resest"
+                                    class="text-center bg-indigo-700 m-1 p-1 border border-white hover:bg-white hover:text-indigo-700 hover:border-indigo-700 hover:font-bold">
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

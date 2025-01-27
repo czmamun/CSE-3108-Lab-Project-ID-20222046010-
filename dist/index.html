@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-slate-800 text-white m-5">
+    <header>
+        <nav
+            class="bg-gradient-to-r from-indigo-500 to-indigo-800 flex justify-between items-center border border-indigo-900 rounded-md px-4">
+            <div class="flex space-x-5 items-center">
+                <div class="text-white text-center font-bold cursor-pointer">
+                    <p class="text-xl">CGPA</p>
+                    <p class="text-sm">Calculator</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-white hover:text-indigo-300">Home</a>
+                    <a href="#" class="text-white hover:text-indigo-300">Calculators</a>
+                    <a href="#" class="text-white hover:text-indigo-300">Guide</a>
+                    <a href="#" class="text-white hover:text-indigo-300">About</a>
+                    <a href="#" class="text-white hover:text-indigo-300">More</a>
+                    <a href="#" class="text-white hover:text-indigo-300">Blog</a>
+                    <a href="#" class="text-white hover:text-indigo-300">Contact</a>
+                </div>
+            </div>
+            <div>
+                <button
+                    class="m-2 px-4 py-2 bg-indigo-700 hover:bg-indigo-600 border rounded-md text-white">Login</button>
+                <button class="m-2 px-4 py-2 bg-indigo-700 hover:bg-indigo-600 border rounded-md text-white">Sign
+                    Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="flex justify-center items-center flex-col my-4">
+            <h1 class="text-xl">Calculate your CGPA...</h1>
+            <p>signup with your information</p>
+        </section>
+        <section>
+            <form action="homePage.php" method="post" class="flex justify-center gap-10">
+                <div class="flex flex-col items-center">
+                    <div class="w-[200px]">
+                        <label for="username">Name</label>
+                        <input type="text" name="username" id="username" required
+                            class="text-black border rounded-md mb-1 px-1">
+                    </div>
+                    <div class="w-[200px]">
+                        <label for="useremail">Email</label>
+                        <input type="email" name="useremail" id="useremail" required
+                            class="text-black border rounded-md mb-1 px-1">
+                    </div>
+                    <div class="w-[200px]">
+                        <label for="usermobile">Mobile</label>
+                        <input type="number" name="usermobile" id="usermobile" required
+                            class="text-black border rounded-md mb-1 px-1">
+                    </div>
+                    <div class="w-[200px]">
+                        <label for="userdob">Date of birth</label>
+                        <input type="date" name="userdob" id="userdob"
+                            class="text-black border rounded-md mb-1 px-1 w-[190px]">
+                    </div>
+
+                    <div class="w-[200px]">
+                        <label for="gender">Gender</label>
+                        <div class="border rounded w-[190px] px-2 flex justify-around">
+                            <label for="gender">Male</label>
+                            <input type="radio" name="gender" id="gender" value="Male">
+                            <label for="gender">Female</label>
+                            <input type="radio" name="gender" id="gender" value="Female">
+                        </div>
+                    </div>
+
+                    <div class="w-[200px]">
+                        <label for="education">Education</label>
+                        <div class="border rounded w-[190px] px-2 flex flex-col">
+                            <div>
+                                <label for="ssc">Completed SSC</label>
+                                <input type="checkbox" name="ssc" id="ssc">
+                            </div>
+                            <div>
+                                <label for="hsc">Completed HSC</label>
+                                <input type="checkbox" name="hsc" id="hsc">
+                            </div>
+                            <div>
+                                <label for="bsc">Completed Bsc</label>
+                                <input type="checkbox" name="bsc" id="bsc">
+                            </div>
+                            <div>
+                                <label for="msc">Completed Msc</label>
+                                <input type="checkbox" name="msc" id="msc">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" value="Submit Form" placeholder="Submit Form"
+                            class="my-3 px-2 bg-indigo-700 border rounded-sm bg-gradient-to-r hover:from-indigo-500 hover:to-indigo-900 hover:border-indigo-500">
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col items-center">
+
+                    <div class="w-[200px] mt-[4px]">
+                        <label for="religion">Religion</label>
+                        <select name="religion" id="religion" class="text-black border rounded-md mb-1 px-1 w-[192px]">
+                            <option value="islam">Islam</option>
+                            <option value="hinduism">Hinduism</option>
+                            <option value="buddhism">Buddhism</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div class="w-[200px]">
+                        <label for="presentadress">Present Address</label>
+                        <input type="text" name="presentadress" id="presentadress"
+                            class="text-black border rounded-md mb-1 px-1">
+                    </div>
+                    <div class="w-[200px]">
+                        <label for="parmaddress">Parmanent Address</label>
+                        <input type="text" name="parmaddress" id="parmaddress"
+                            class="text-black border rounded-md mb-1 px-1">
+                    </div>
+                    <div class="w-[200px]">
+                        <label for="userpassword">Password</label>
+                        <input type="password" name="userpassword" id="userpassword"
+                            class="text-black border rounded-md mb-1 px-1">
+                    </div>
+                    <div class="w-[200px]">
+                        <label for="userpasswordagain">Repeat Password</label>
+                        <input type="password" name="userpasswordagain" id="userpasswordagain"
+                            class="text-black border rounded-md mb-1 px-1">
+                    </div>
+                    <div class="w-[200px]">
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="comment" cols="25" rows="4"
+                            class="border rounded text-black p-1 text-[14px]"></textarea>
+                    </div>
+                    <div>
+                        <input type="reset" value="Reset Form" placeholder="Submit Form"
+                            class="my-2 px-2 bg-indigo-700 border rounded-sm bg-gradient-to-r hover:from-indigo-500 hover:to-indigo-900 hover:border-indigo-500">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
